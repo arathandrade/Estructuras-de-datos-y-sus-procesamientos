@@ -13,7 +13,8 @@ def registrar():
     isbn_t = input("ISBN del libro: ")
     fecha_de_adquisicion_t = input("fecha de adquisicion del libro: ")
 
-    libro = dict(id= nuevo_id(), titulo = titulo_t.upper(), autor = autor_t.upper(), genero = genero_t.upper(), año_de_publicacion = año_de_publicacion_t.upper(), isbn = isbn_t.upper(), fecha_de_adquisicion = fecha_de_adquisicion_t.upper())
+    libro = dict(id= nuevo_id(), titulo = titulo_t.upper(), autor = autor_t.upper(), genero = genero_t.upper(), año_de_publicacion = año_de_publicacion_t.upper(), 
+                 isbn = isbn_t.upper(), fecha_de_adquisicion = fecha_de_adquisicion_t.upper())
     
     lista.append(libro)
 
@@ -21,7 +22,8 @@ def catalogo_completo():
     print("ID\tTITULO\tAUTOR\tGENERO\tAÑO DE PUBLICACION\tISBN\tFECHA DE ADQUISICION")
 
     for libro in lista:
-        print(libro["id"],"\t",libro["titulo"],"\t",libro["autor"],"\t",libro["genero"],"\t",libro["año_de_publicacion"],"\t",libro["isbn"],"\t",libro["fecha_de_adquisicion"])
+        print(libro["id"],"\t",libro["titulo"],"\t",libro["autor"],"\t",libro["genero"],"\t",libro["año_de_publicacion"],"\t",libro["isbn"],"\t",
+              libro["fecha_de_adquisicion"])
     print()
 
 def reporte_autor():
@@ -37,7 +39,8 @@ def reporte_autor():
 
     for libro in lista:
         if libro["autor"] == buscar.upper():  
-            print(libro["id"],"\t",libro["titulo"],"\t",libro["autor"],"\t",libro["genero"],"\t",libro["año_de_publicacion"],"\t",libro["isbn"],"\t",libro["fecha_de_adquisicion"])
+            print(libro["id"],"\t",libro["titulo"],"\t",libro["autor"],"\t",libro["genero"],"\t",libro["año_de_publicacion"],"\t",libro["isbn"],"\t",
+                  libro["fecha_de_adquisicion"])
     print()
 
 def reporte_genero():
@@ -53,7 +56,8 @@ def reporte_genero():
 
     for libro in lista:
         if libro["genero"] == buscar.upper():  
-            print(libro["id"],"\t",libro["titulo"],"\t",libro["autor"],"\t",libro["genero"],"\t",libro["año_de_publicacion"],"\t",libro["isbn"],"\t",libro["fecha_de_adquisicion"])
+            print(libro["id"],"\t",libro["titulo"],"\t",libro["autor"],"\t",libro["genero"],"\t",libro["año_de_publicacion"],"\t",libro["isbn"],"\t",
+                  libro["fecha_de_adquisicion"])
     print()
 
 def reporte_año():
@@ -62,7 +66,8 @@ def reporte_año():
 
     for libro in lista:
         if libro["año_de_publicacion"] == buscar.upper():  
-            print(libro["id"],"\t",libro["titulo"],"\t",libro["autor"],"\t",libro["genero"],"\t",libro["año_de_publicacion"],"\t",libro["isbn"],"\t",libro["fecha_de_adquisicion"])
+            print(libro["id"],"\t",libro["titulo"],"\t",libro["autor"],"\t",libro["genero"],"\t",libro["año_de_publicacion"],"\t",libro["isbn"],"\t",
+                  libro["fecha_de_adquisicion"])
     print()
 
 def reporte_titulo():
